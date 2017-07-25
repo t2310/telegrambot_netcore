@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TelegramBot.Core.Types;
 
 namespace TelegramBot.Core
 {
     public interface ITelegramBotClient
     {
-        Message GetMe();
+        Task<Message> GetMe();
 
-        List<Update> GetUpdates();
+        Task<List<Update>> GetUpdates();
 
-        Message SendMessage(BotMessage message);
+        Task<Message> SendMessage(BotMessage message);
     }
 }
