@@ -10,7 +10,7 @@ namespace TelegramBot.Core
     {
         Task<Message> GetMe();
 
-        Task<List<Update>> GetUpdates();
+        Task<List<Update>> GetUpdates(UpdateParams updateParams);
 
         Task<Message> SendMessage(BotMessage message);
     }
