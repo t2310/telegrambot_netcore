@@ -13,5 +13,7 @@ namespace TelegramBot.Core
         Task<List<Update>> GetUpdates(UpdateParams updateParams);
 
         Task<Message> SendMessage(BotMessage message);
+
+        Task<Message> SendDocument(BotDocument document);
     }
 }

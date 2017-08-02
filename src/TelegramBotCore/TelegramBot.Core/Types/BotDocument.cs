@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace NaughtySoft.TelegramBot.Core.Types
+namespace TelegramBot.Core.Types
 {
     public class BotDocument
     {
